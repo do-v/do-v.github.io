@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/images/favicon.png" rel="icon" />
+<title>Bản đồ API</title>
+<meta name="description" content="Hướng dẫn sử dụng bản đồ API">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg bg-dark navbar-text-light navbar-dropdown-dark border-0">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="https://www.do-v.com" title="do-v"> <img src="assets/images/DO-V.svg" alt="do-v"/> </a> 
+        
+		<!-- <span class="text-2 text-light ml-2">v1.0</span>  -->
+    <span></span>
+    <span></span>
+        <!-- Logo End -->
+        
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Giới thiệu</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_installation">Tham khảo nhanh</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_test">Kiểm tra API</a>
+          
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="idocs_start">
+        <h1>API BẢN ĐỒ</h1>
+        <h2>Cung cấp dịch vụ bản đồ số.</h2>
+        <ul>
+          <li>Tìm kiếm các đối tượng theo tên hoặc loại.</li>
+          <li>Tìm kiếm đối tượng theo vị trí.</li>
+          <li>Tuyến đường từ A đến B,...</li>
+        </ul>
+        <p>Có thể tích hợp lập kế hoạch tuyến đường từ A đến B, điều hướng từng chặng, tính toán thời gian, để thực các nhu cầu cho khách hàng.</p>
+        <p>Được ứng dụng vào nhiều sản phẩm, nền tảng ứng dụng và giải pháp trên nhiều lĩnh vực về tối ưu hóa lộ trình vận chuyển, lập kế hoạch di chuyển, quản lý đội xe và nhiều hạng mục liên quan đến logistic và nhiều lĩnh vực khác.</p>
+        <p class="lead">Hỗ trợ API : <a target="_blank" href="mailto:contact@do-v.com">contact@do-v.com</a></p>
+        <p class="lead">Xem bản đồ: <a target="_blank" href="https://www.do-v.com/map">https://www.do-v.com/map</a></p>
+		<hr>
+
+        <p class="alert alert-info">Bạn có thể xem thêm thông tin điều khoản dịch vụ mà chúng tôi cung cấp <a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">tại đây</a>. Dữ liệu bản đồ và hồ sơ định tuyến sử dụng mặc định là OpenStreetMap bản đồ Việt Nam nếu bạn muốn bản đồ tùy chỉnh khác vui lòng liên hệ hỗ trợ API</p>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Installation
+		============================ -->
+        <section id="idocs_installation">
+          <h2>Bắt đầu</h2>
+          <p class="lead">1. <a class="ml-1" target="_blank" href="https://www.do-v.com/signin?tab=sign-up"><i class="fas fa-external-link-alt"></i> Đăng ký tài khoản do-v</a></p>
+          <p class="lead">2. <a class="ml-1" target="_blank" href="https://www.do-v.com/account?tab=package"><i class="fas fa-external-link-alt"></i> Tạo khóa API</a></p>
+
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- HTML Structure
+		============================ -->
+        <section id="idocs_html_structure">
+          <h2>Tham khảo nhanh</h2>
+          <p class="lead">Truy xuất API</p>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="accordion accordion-alterate arrow-right" id="popularTopics">
+                <div class="card">
+                  <div class="card-header" id="heading1">
+                    <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">Xác thực</a> </h5>
+                  </div>
+                  <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
+                    <div class="card-body"><p>Việc xác thực được thực hiện thông qua header HTTP.</p>
+                      <p><code>&lt;API_KEY&gt;</code>: Sử dụng khóa API đã được tạo.</p>
+                      <pre><code class="html">curl -X GET \
+-H "Authorization: ${API_KEY}" \
+${API_URL}
+                      </code></pre>
+                    <p>Phần thân phản hồi là một đối tượng JSON chứa tất cả các trường API cung cấp.</p></div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <p class="lead">Danh sách API</p>
+          <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>API URL</th>
+                <th>HTTP Verb</th>
+                <th>Chức năng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>https://www.do-v.com/map_api?t=search&q=<code>&lt;name&gt;</code>&accept-language=vi</td>
+                <td><code>GET</code></td>
+                <td>Tìm kiếm các đối tượng theo tên.</td>
+              </tr>
+            <tr>
+                <td>https://www.do-v.com/map_api?t=reverse&lat=<code>&lt;latitude&gt;</code>&lon=<code>&lt;longitude&gt;</code>&accept-language=vi</td>
+                <td><code>GET</code></td>
+                <td>Tìm kiếm đối tượng theo vị trí.</td>
+              </tr>
+              <tr>
+                <td class="html">https://www.do-v.com/map_api?t=route&point=<code>&lt;latitudeA&gt;</code>%2C<code>&lt;longitudeA&gt;</code>&point=<code>&lt;latitudeB&gt;</code>%2C<code>&lt;longitudeB&gt;</code>&locale=vi</td>
+                <td><code>GET</code></td>
+                <td>Tìm tuyến đường.</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+        </section>
+        
+		<hr class="divider">
+		
+		<!-- CheckAPI
+		============================ -->
+        <section id="idocs_test">
+          <h2>Kiểm tra API</h2>
+          <!-- <p class="lead mb-5">Để kiểm tra API bạn có thể sử dụng postman</p> -->
+          <ul>
+            <li>Có thể sử dụng Postman request HTTP để kiểm tra</li>
+            <li>Giải mã hình nhiều đường được mã hóa ở route->path->points tham khảo <a target="_blank" href="https://developers.google.com/maps/documentation/utilities/polylineutility?hl=vi">tại đây</a></li>
+            <li>Có thể sử dụng TileMap <a target="_blank" href="https://snazzymaps.com/">tại đây</a></li>
+            <li>Đơn vị thơi gian sử dụng là mili giây</li>
+            <li>Đơn vị khoảng cách sử dụng là mét kiểu số chấm động</li>
+          </ul>
+        </section>
+		
+		
+		<hr class="divider">
+		
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <!-- <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a data-toggle="tooltip" href="" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a data-toggle="tooltip" href="" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+        <li><a data-toggle="tooltip" href="" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul> -->
+      <p class="text-center">Copyright &copy; 2024 <a href="http://www.do-v.com">do-v</a>. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Bắt đầu" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
