@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/tobi.css" />
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+
+        <title>Goddess Area</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Goddess Area</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#heros" class="nav__link">Heroes</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#download" class="nav__link"></a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/home.png" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">G&A</span>
+                        <h1 class="home__data-title">Build allies <br>and <b>deploy</b> in <br>Turn-Based battles</h1>
+                        <!-- <a href="#" class="button">Explore</a> -->
+
+                    </div>
+
+                    <div class="home__social">
+                        <!-- <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a> -->
+
+                        <!-- <a href="https://www.youtube.com/@HarmonyVibeTune" target="_blank" class="home__social-link">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                        <a href="" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="mailto:harmony@do-v.com" target="_blank" class="home__social-link">
+                            <i class="ri-mail-fill"></i>
+                        </a> -->
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">Download & Get free pull ticket</span>
+                            <a href="#download" class="button button--flex button--link home__info-button">
+                                Download <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/boxgold.png" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Team Building Strategy & Skill Combination in<br> Goddess Area</h2>
+                        <p class="about__description">Build a powerful team, combine skills and special moves to optimize your combat power. Create the perfect strategy, overcome your opponents and win in intense battles!
+                        </p>
+                        <a href="#" class="button">Explore</a>
+                    </div>
+
+                    <div class="about__img">
+                        <!-- <div class="about__img-overlay">
+                            <img src="assets/img/about1.png" alt="" class="about__img-one">
+                        </div> -->
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about2.png" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <section class="app__screenshots app__section"> -->
+                    <div class="container">
+                        <h2 class="app__section-title"></h2>
+                    </div>
+                    <div class="app__screenshots-wrapper container">
+                        <div class="app__screenshots-list">
+                            <a href="assets/img/preview/1.png" class="lightbox">
+                                <img src="assets/img/preview/1.png" class="app__screenshot" alt="" />
+                            </a>
+                            <a href="assets/img/preview/2.png" class="lightbox">
+                                <img src="assets/img/preview/2.png" class="app__screenshot" alt="" />
+                            </a>
+                            <a href="assets/img/preview/3.png" class="lightbox">
+                                <img src="assets/img/preview/3.png" class="app__screenshot" alt="" />
+                            </a>
+                            <a href="assets/img/preview/3.png" class="lightbox">
+                                <img src="assets/img/preview/4.png" class="app__screenshot" alt="" />
+                            </a>                                                        
+                        </div>
+                    </div>
+                <!-- </section> -->
+
+
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <!-- <section class="discover section" id="discover">
+                <h2 class="section__title">Discover the most <br> attractive places</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover1.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Bali</h2>
+                                <span class="discover__description">24 tours available</span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover2.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Hawaii</h2>
+                                <span class="discover__description">15 tours available</span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover3.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Hvar</h2>
+                                <span class="discover__description">18 tours available</span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover4.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Whitehaven</h2>
+                                <span class="discover__description">32 tours available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== EXPERIENCE ====================-->
+            <!-- <section class="experience section">
+                <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">20</h2>
+                            <span class="experience__description">Year <br> Experience</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">75</h2>
+                            <span class="experience__description">Complete <br> tours</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">650+</h2>
+                            <span class="experience__description">Tourist <br> Destination</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience2.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== VIDEO ====================-->
+            <!-- <section class="video section">
+                <h2 class="section__title">Demo</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Find out more with our video of the most beautiful and 
+                        pleasant places for you and your family.
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                        <iframe width="960" height="540"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+                        </iframe>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="heros">
+                <h2 class="section__title">Heroes</h2>
+
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/1.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Azure</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/2.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">5,0</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Warrior</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/3.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,9</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Xiaoyi</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/4.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Dryad</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/5.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Fox</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                    
+                    <!--==================== PLACES CARD 6 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/6.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Yulee</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    
+                    <!--==================== PLACES CARD 7 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/7.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Laplace Archer</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    
+                    <!--==================== PLACES CARD 8 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/8.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Lilia Carter</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                    
+                    
+                    <!--==================== PLACES CARD 9 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/9.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Neeko</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    
+                    <!--==================== PLACES CARD 10 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/10.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Ranger</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    
+                    <!--==================== PLACES CARD 11 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/11.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Rift</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    
+                    <!--==================== PLACES CARD 12 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/12.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Shinobi</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    
+                    <!--==================== PLACES CARD 13 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/13.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Sniper</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    
+                    <!--==================== PLACES CARD 14 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/14.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Syrabella</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                    
+                    
+                    <!--==================== PLACES CARD 15 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/15.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Sakura</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>                    
+
+                    
+                    <!--==================== PLACES CARD 16 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/cs/16.png" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <!-- <span class="place__rating-number">4,8</span> -->
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Zara</h3>
+                                <span class="place__subtitle">Legendary</span>
+                                <!-- <span class="place__price">$0</span> -->
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--==================== SUBSCRIBE ====================-->
+            <!-- <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">Subscribe Our <br> Newsletter</h2>
+                        <p class="subscribe__description">Subscribe to our newsletter and get a 
+                            special 30% discount.
+                        </p>
+    
+                        <form action="" class="subscribe__form">
+                            <input type="text" placeholder="Enter email" class="subscribe__input">
+    
+                            <button class="button">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section> -->
+            
+            <!--==================== SPONSORS ====================-->
+            <!-- <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors1.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors2.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors3.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors4.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors5.png" alt="" class="sponsor__img">
+                    </div>
+                </div>
+            </section> -->
+
+       <section class="download section" id="download">
+        <div class="app__rect">
+            <h2 class="section__title about__title">Start play</h2>
+            <div class="app__header">
+        <div class="app__logo-wrapper"> <img class="app__logo" src="assets/img/icon_game.png" alt="Goddess Area"></div>
+        <div class="app__infos">
+            <h1 class="app__name">Goddess Area</h1>
+            <p class="app__description">Turn-Based Card Battle Game</p>
+            <div class="app__buttons app__buttons">
+                <a href="" class="app__button-play" target="_blank" title="Get on Google Play">
+                    <img src="assets/img/google-play-badge.png" alt="Get on Google Play">
+                </a>
+                <a href="" class="app__button-ios" target="_blank" title="Get on Appstore">
+                    <img src="assets/img/ios-badge.svg" alt="Get on Appstore">
+                </a>
+            </div>
+        </div>
+    </div>
+        </div>
+        </section>
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Goddess Area</h3>
+                        <p class="footer__description">Invite hero <br>join your team,<br>Lead them to victory.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <!-- <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a> -->
+                            <!-- <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a> -->
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Features</a>
+                            </li>
+                            <!-- <li class="footer__item">
+                                <a href="" class="footer__link">New & Blog</a>
+                            </li> -->
+                        </ul>
+                    </div>
+    
+                    <!-- <div class="footer__data">
+                        <h3 class="footer__subtitle">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Plan y Pricing</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Become a member</a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Other</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="https://playluma.com/" class="footer__link">PlayLuma</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://www.do-v.com/signin?tab=sign-in" class="footer__link">Web AR (vn)</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://do-v.com/harmony/" class="footer__link">Harmony</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <!-- <li class="footer__item">
+                                <a href="" class="footer__link">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Support Center</a>
+                            </li> -->
+                            <li class="footer__item">
+                                <a href="mailto:contact@do-v.com" class="footer__link">Contact Us<br>contact@do-v.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2025 Goddess Area do-v. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/css/tobi.min.js"></script>
+		<script>
+			window.onload = function () {
+				var tobi = new Tobi();
+			};
+		</script>
+        <!-- <script src="js/essential.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script> -->
+    </body>
+</html>
