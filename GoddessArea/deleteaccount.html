@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/tobi.css" />
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+
+        <title>Goddess Area</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Goddess Area</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#heros" class="nav__link">Heroes</a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="#download" class="nav__link"></a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/homebg.png" alt="" class="home__img">
+                <img src="assets/img/character.png" alt="" class="character__img">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">___</span>
+                        <h1 class="home__data-title">Delete Account</h1>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="video section"></section>
+                <h2 class="section__title">Delete Account</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">To delete your account, please go to in-game settings on the top right of the screen.
+                    </p>
+                    <img src="assets/img/screenshot/Screenshot_26.png" class="app__screenshot" alt="" />
+                    <br>
+                    <p class="video__description">Click the delete button then enter your password or verification code to begin deleting your history.
+                    </p>
+                    <img src="assets/img/screenshot/Screenshot_27.png" class="app__screenshot" alt="" />
+                    <br>
+                    <p class="video__description">After deleting your account progress will be deleted from the game server, you can recreate your account or contact support to restore your in-game progress.
+                    </p>
+                </div>
+            </section>
+
+       <section class="download section" id="download">
+        <div class="app__rect">
+            <h2 class="section__title about__title">Start play</h2>
+            <div class="app__header">
+        <div class="app__logo-wrapper"> <img class="app__logo" src="assets/img/icon_game.png" alt="Goddess Area"></div>
+        <div class="app__infos">
+            <h1 class="app__name">Goddess Area</h1>
+            <p class="app__description">Turn-Based Card Battle Game</p>
+            <div class="app__buttons app__buttons">
+                <a href="" class="app__button-play" target="_blank" title="Get on Google Play">
+                    <img src="assets/img/google-play-badge.png" alt="Get on Google Play">
+                </a>
+                <a href="" class="app__button-ios" target="_blank" title="Get on Appstore">
+                    <img src="assets/img/ios-badge.svg" alt="Get on Appstore">
+                </a>
+            </div>
+        </div>
+    </div>
+        </div>
+        </section>
+
+        </main>
+
+        <div id="footer-container"></div>
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script type="text/javascript" src="assets/css/tobi.min.js"></script>
+		<script>
+			window.onload = function () {
+				var tobi = new Tobi();
+			};
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+		</script>
+        <!-- <script src="js/essential.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script> -->
+    </body>
+</html>
